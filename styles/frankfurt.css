@@ -13,7 +13,7 @@ html {
 
 	h1 {
 		@apply text-white shadow-md;
-		background: #3333B3;
+		background: #FF6C0C;
 		margin-top: -4rem;
 		margin-bottom: 2rem;
 		margin-left: -5.5rem;
@@ -21,7 +21,7 @@ html {
 		padding: 5.5rem 3rem 1rem 3rem;
 		width: 1000%;
 		--un-shadow-opacity: 1;
-		--un-shadow-color: #3333B3;
+		--un-shadow-color: #F1D384;
 	}
 
 	&.center,
