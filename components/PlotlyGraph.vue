@@ -25,7 +25,7 @@
     },
   
     mounted() {
-  
+      this.loadPlotlyScript();
       this.createPlot();
   
       // this.loadPlotlyScript().then(() => {
@@ -41,17 +41,14 @@
     },
   
     methods: {
-      loadPlotlyScript() {
+      async loadPlotlyScript() {
         return new Promise((resolve, reject) => {
-          if (window.Plotly) {
-            resolve();
-          } else {
-            const script = document.createElement('script');
-            script.src = 'https://cdn.plot.ly/plotly-latest.min.js';
-            script.onload = () => resolve();
-            script.onerror = () => reject('Failed to load Plotly script.');
-            document.head.appendChild(script);
-          }
+          const script2 = document.createElement('script');
+            script2.src = 'https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG';
+            script2.onload = () => resolve();
+            script2.onerror = () => reject('Failed to load Plotly script.');
+            document.head.appendChild(script2);
+            console.log('mathjax already loaded', window.Plotly);
         });
       },
   
