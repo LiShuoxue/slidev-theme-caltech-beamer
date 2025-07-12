@@ -7,10 +7,10 @@ export default defineConfig({
         // search up for workspace root
         searchForWorkspaceRoot(process.cwd()),
         // your custom rules
-        "/Users/shuoxueli/.slidev_global/node_modules/katex/dist/fonts/",
-        "/Users/shuoxueli/.slidev_global/node_modules/@shikijs/langs/",
-        "/Users/shuoxueli/.slidev_global/node_modules/@shikijs/themes/dist/",
-        "/Users/shuoxueli/.slidev_global/node_modules/mermaid/dist/chunks/mermaid.esm/"
+        "~/.slidev_global/node_modules/katex/dist/fonts/",
+        "~/.slidev_global/node_modules/@shikijs/langs/",
+        "~/.slidev_global/node_modules/@shikijs/themes/dist/",
+        "~/.slidev_global/node_modules/mermaid/dist/chunks/mermaid.esm/"
       ],
     },
   },
